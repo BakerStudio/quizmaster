@@ -10,9 +10,16 @@ button, input[type="text"] {
   padding: 5px;
 }
 
-button:hover {
+.start-button:hover {
   cursor: pointer;
-  background-color: lightgreen;
+  background-color: green;
+}
+
+.start-button {
+	background-color: lightgreen;
+	border: 1px solid black;
+	text-decoration: none;
+	padding: 10px;
 }
 
 .container {
@@ -32,7 +39,7 @@ h1, h3 {
 	width: 60%;
 	margin: auto;
 	margin-bottom: 20px;
-	border: 1px solid gray;
+	border: 1px solid lightgray;
 	text-align: center;
 }
 
@@ -40,7 +47,7 @@ h1, h3 {
 	width: 60%;
 	margin: auto;
 	margin-bottom: 20px;
-	border: 1px solid gray;
+	border: 1px solid lightgray;
 
 }
 
@@ -48,19 +55,28 @@ h1, h3 {
 	width: 40%;
 	margin: auto;
 	margin-bottom: 20px;
-	border: 1px solid gray;
+	border: 1px solid lightgray;
 	text-align: center;
 }
 
-.warning-container {
+.message-container {
 	width: 60%;
 	margin: auto;
 	margin-bottom: 5px;
 	border: 1px solid gray;
-	background-color: pink;
 
+}
+
+.pink-back {
+	background-color: pink;
+}
+
+.green-back {
+	background-color: lightgreen;
 }
 
 .hidden {
 	display: none;
 }
+
+.js-next {}

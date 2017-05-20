@@ -12,25 +12,26 @@
 			<p>Which is the bestselling album of the Classic Rock era?</p>
 		</div>
 
-		<div class="warning-container hidden">
-			<p>Select an answer</p>
+		<div class="message-container">
+			<p class="js-message-text"></p>
 		</div>
 
 		<div class="answer-container">
 			<form class='js-radiobutton'>
-				  <input type="radio" name='radiogroup' value="0" onclick='checkRadio(this.value)'>
+				  <input type="radio" name='radiogroup' id='r0' value="0" onclick='checkRadio(this.value)'>
 				  			Michael Jackson, <i>Thriller</i><br>
-				  <input type="radio" name='radiogroup' value="1" onclick='checkRadio(this.value)'>
+				  <input type="radio" name='radiogroup' id='r1' value="1" onclick='checkRadio(this.value)'>
 				  			The Rolling Stones, <i>Sticky Fingers</i><br>
-				  <input type="radio" name='radiogroup' value="2" onclick='checkRadio(this.value)'>
+				  <input type="radio" name='radiogroup' id='r2' value="2" onclick='checkRadio(this.value)'>
 				  			Led Zeppelin, <i>Houses of the Holy</i><br>
-				  <input type="radio" name='radiogroup' value="3" onclick='checkRadio(this.value)'>
-				  			The Eagles, <i>Their Greatest Hits (1971-1975)</i>
+				  <div class='js-r3'><input type="radio" name='radiogroup' value="3" onclick='checkRadio(this.value)'>
+				  			The Eagles, <i>Their Greatest Hits (1971-1975)</i></div>
 			</form>
 		</div>
 
 		<div class="button-container centerit">
-			<button id="js-check" class="js-clicked" type="button">Check answer</button>
+			<button class="js-check" type="button">Check answer</button>
+			<button class="js-next hidden" type="button">Next</button>
 		</div>
 
 	</div> <!-- end of wholepage-container -->
